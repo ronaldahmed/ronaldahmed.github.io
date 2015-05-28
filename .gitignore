@@ -1,0 +1,53 @@
+# Cache files #
+###############
+*.pyc
+*.pyo
+.Rhistory
+.RData
+*.idea/
+.Rhistory
+.RData
+www/media/CACHE/
+# Virtualenv files #
+####################
+bin/*
+lib/*
+include/*
+docs/*
+src/*
+build/*
+share/*
+man/*
+node_modules/*
+local
+.metadata/*
+# OS generated files #
+######################
+.DS_Store?
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+.Python
+.RData
+.Rhistory
+*.*~
+*~
+# Project specific files #
+##########################
+www/settings/local.py
+README.md
+# Static
+www/static/
+www/core/static/core/tmp/
+www/core/static/core/build/
+www/core/static/core/handlebars/
+www/docs/static/docs/build/
+www/account/static/account/build/
+
+# Sass cache
+/**/.sass-cache/
+
+# Various
+www/dump.rdb
+dump.rdb
