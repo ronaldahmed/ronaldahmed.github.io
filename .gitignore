@@ -33,21 +33,13 @@ Thumbs.db
 .Rhistory
 *.*~
 *~
-# Project specific files #
+# Jekyll specific files #
 ##########################
-www/settings/local.py
-README.md
-# Static
-www/static/
-www/core/static/core/tmp/
-www/core/static/core/build/
-www/core/static/core/handlebars/
-www/docs/static/docs/build/
-www/account/static/account/build/
+_site/
+.jekyll-metadata
 
 # Sass cache
 /**/.sass-cache/
 
 # Various
-www/dump.rdb
 dump.rdb
