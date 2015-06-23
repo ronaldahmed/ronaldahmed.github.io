@@ -1,0 +1,15 @@
+highlighter: pygments
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "base"
+  -
+    scope:
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "project" # overrides previous default layout
+      author: "R.A. Cardenas"
