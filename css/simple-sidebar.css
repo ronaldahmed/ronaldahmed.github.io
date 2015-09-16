@@ -137,7 +137,11 @@
 	}
 
 .scrollable{
+<<<<<<< HEAD
     height: 150px;
+=======
+    height: 200px;
+>>>>>>> 9a443b8d314017cacb00bc5a8ac896a32e27877b
     overflow-y: auto;
 }
 
