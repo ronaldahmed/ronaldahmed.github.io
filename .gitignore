@@ -13,7 +13,6 @@ www/media/CACHE/
 bin/*
 lib/*
 include/*
-docs/*
 src/*
 build/*
 share/*
