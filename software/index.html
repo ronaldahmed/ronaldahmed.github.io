@@ -10,68 +10,81 @@ title: Code
                 <div class="row">
 
                     <div class="col-lg-12">
-                        <a id="about"><h2>About me</h2></a>
-                        <p>I am a senior student of Mechatronics Engineering (Robotics) at <a href="http://www.uni.edu.pe/" target="_blank">National University of Engineering (UNI)</a> in Lima, Peru. There, I was advised by <a href="https://twitter.com/amcoronado">Alberto Coronado</a> in research projects in Machine Learning. <br>
-                            Currently, I serve as vice-president of the Artificial Intelligence &amp; Control Systems Research Laboratory (<a href="http://giscia.github.io/">GISCIA</a>) in the Department of Mechanical Engineering at UNI.
-                            There, we conduct research in Robotics, Machine Learning, NLP, Computer vision and Finance, involving undergraduate students early in hands-on projects in these fields.
-                            We often organize seminars and lectures in order to attract and motivate the next generation of researchers in Peru.</p>
-                        [<a href="https://scholar.google.com/citations?user=QoPko3IAAAAJ&hl=es&oi=ao">Google Scholar</a>]
-                        <br>
-                        [<a href="docs/cv.pdf">Resume</a>]
-                    </div>
-
-
-                    <div class="col-lg-12">
-                        <a id="research"><h2>Research Interests</h2></a>
-                        <p>I am mainly interested in the application of Machine Learning to NLP tasks and Robotics, specially the symbol grounding problem and language grounding task.</p>
-                        <p>Some interesting trends I have been following lately are deep learning, automatic image captioning, distributed/parallel machine learning, learning representations, robot navigation, among others.</p>
-                        <p>Here is a more detailed list of areas I find interesting.</p>
+                        <h2>Datasets</h2>
                         <ul>
-                            <li>Natural Language Processing: syntactic and semantic parsing, cross-lingual models, statistical machine translation, topic modeling, summarization.</li>
-                            <li>Machine learning: probabilistic graphical models, structured prediction, deep learning, learning representations, tensor modeling.</li>
-                            <li>Robotics: symbol grounding problem, robot navigation.</li>
-                            <li>Language grounding, image and video captioning.</li>
-                            <li>Interactive data visualization</li>
+                            <li>
+                                <h3>Job Ad corpus annotated for Name Entity Recognition tasks.</h3>
+                                <p>
+                                Consisting of 800 job ads, each one tokenized and manually annotated with POS tag information (EAGLE format for Spanish data) and Entity Label in BIO format. Details in this <a href="https://www.researchgate.net/publication/284156153_Panorama_of_the_market_demand_for_mechanical_engineers_in_South_American_countries">paper</a>.<br>
+                                [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis/blob/master/annotated%20data.zip">link to repo</a>]
+                                </p>
+                            </li>
+
+                            <li>
+                                <h3>Entities extracted from Job Ads corpus.</h3>
+                                <p>
+                                Consisting of nearly 9000 job ads sampled from the database, tokenized and filtered from low-frequency words and tokens of no interest (phone numbers, salary, office hours, emails, urls). Then, the shallow parsers extract the relevant phrases. Dataset used in the topic model part of <a href="http://ronaldahmed.github.io/papers/shallow_parsing_topic_models.pdf">this paper</a>.<br>
+                                [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis">link to repo</a>]
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Complete preprocessed Job Ads corpus</h3>
+                                <p>
+                                More than 900k job ads extracted from popular Latin American job-hunting websites. The NLTK tokenizer was extended to capture technical words typical of these kind of advertisement. [available upon request]<br>
+                                </p>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-12">
-                        <a id="news"><h2>News &amp; Activity</h2></a>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="scrollable custom-list">
-                            <ul>
-                                <li><b>August 2015:</b> Presented a <a>poster</a> about Topic Modeling and Shallow Parsing applied to Spanish web data at the <a href="http://www.i.kyoto-u.ac.jp/mlss15/">MLSS 2015</a> - Kyoto, Japan.
-                                <li><b>August 2015:</b> Attended the Machine Learning Summer School (<a href="www.i.kyoto-u.ac.jp/mlss15/">MLSS 2015</a>) in Kyoto, Japan.</li>
-                                <li><b>July 2015:</b> Paper accepted to ASME 2015 International Mechanical Engineering Congress &amp; Exposition (<a href="http://www.asmeconferences.org/IMECE2015/">IMECE 2015</a>).</li>
-                                <li><b>June 2015:</b> Paper accepted to the 2nd International Seminar on Mining (<a href="https://gecamin.com/maplemin/2015/english/">MAPLEMIN</a>).</li>
-                                <li><b>July 2014:</b> Attended the Lisbon Machine Learning Summer School 2014 (<a href="http://lxmls.it.pt/2014/">LxMLS 2014</a>).</li>
-                                <li><b>February 2013:</b> Attended the training camp for ACM-ICPC South American finalist teams (Maratona do Programacao 2013) in Sao Paulo, Brasil.</li>
-                            </ul>
-                        </div>
-                    </div>
-
 
                     <div class="col-lg-12">
-                        <a id="publications"><h2>Publications &amp; Poster sessions</h2></a>
-                        <ul class="custom-list">
-                            <li><b>Panorama of the market demand for Mechanical Engineers in South American countries</b>. <span style="text-decoration:underline">R.A. Cardenas</span>, K.S. Bello, A.R. Valle, E.R. Villota and A.M. Coronado. Proceedings of <a href="http://www.asmeconferences.org/IMECE2015/">ASME 2015 International Mechanical Engineering Congress &amp; Exposition (IMECE 2015)</a>. [forthcoming]</li>
+                        <h2>Code</h2>
+                        <ul>
+                            <li>
+                                <h3>Labor market analysis using Topic Models and Shallow Parsing</h3>
+                                [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis">code</a>]
+                                <p>
+                                Analysis of the skills expected in engineers in Peruvian industry. Topic models are used to examine the relationship between requirements and functions, previously extracted by a Shallow Parser.All data was extracted from job-hunting websites, preprocessed and manually annotated.<br>
+                                Interactive data visualizations and results explorer are available in these links:
+                                <ul>
+                                    <li>Labor market demand treemap for all professional majors in Peru. [<a href="http://www.empleatron.com/peru/nueva-data/treemap">link</a>]</li>
+                                    <li>Labor market demand treemap for engineering majors for <a href="http://www.empleatron.com/peru/engineering/treemap">Peru</a>, <a href="http://www.empleatron.com/chile/engineering/treemap">Chile</a>, and <a href="http://www.empleatron.com/colombia/engineering/treemap">Colombia</a>.</li>
+                                    <li>Relationship between all professional majors in Peru. [<a href="http://www.empleatron.com/peru/nueva-data/circleplot">link</a>]</li>
+                                    <li>Relationship between engineering majors in <a href="http://www.empleatron.com/peru/engineering/circleplot">Peru</a>, <a href="http://www.empleatron.com/chile/engineering/circleplot">Chile</a>, and <a href="http://www.empleatron.com/colombia/engineering/circleplot">Colombia</a>.</li>
+                                    <li>Topic content browser, based on the work of <a href="http://www.cs.princeton.edu/~achaney/projects/papers/ChaneyBlei2012.pdf">Chaney and Blei</a>. [<a href="http://www.empleatron.com/peru/browser/">link</a>]</li>
+                                </ul>
+                                </p>
+                            </li>
 
-                            <li><b>Labor market demand analysis for engineering majors in Peru using Shallow Parsing and Topic Modeling</b>. <span style="text-decoration:underline">R.A. Cardenas</span>, K.S. Bello and A.M. Coronado. <a href="http://www.i.kyoto-u.ac.jp/mlss15/">Machine Learning Summer School</a> Poster Session, Kyoto, Japan, August, 2015. [<a href="papers/shallow_parsing_topic_models.pdf">pdf</a>, <a href="docs/poster_MLSS.jpg" target="_blank">poster</a>]</li>
+                            <li>
+                                <h3>Rule-based professional major extractor</h3>
+                                [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis/tree/master/major_extractor">code</a>]
+                                <p>
+                                Professional majors requested in job ads are extracted using regular expressions.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Simultaneus Localization and Mapping for mobile ground robots</h3>
+                                [<a href="https://github.com/ronaldahmed/SLAM-for-ugv">code</a>]
+                                <p>
+                                SLAM simulation for Ackerman mobile robots using EKF and particle filters, testing landmarks maps and occupancy grid maps of university facilities.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Path planning for mobile ground robots</h3>
+                                [<a href="https://github.com/ronaldahmed/SLAM-for-ugv/tree/master/path-planning">code</a>]
+                                <p>
+                                Path planning for Ackerman mobile robots using A* algorithm. Tested for an HPI Racing Buggy (a scaled sand car), at indoor environments.
+                                </p>
+                            </li>
 
-                            <li><b>Peruvian labor market demand analysis for Mechanical and Electrical Engineering</b>. K.S.Bello, <span style="text-decoration: underline">R.A.Cardenas</span>, A.R.Valle, E.R.Villota and A.M.Coronado. Proceedings of XXI CONIMERA, Huancayo, Peru, August, 2015. [<a href="https://www.researchgate.net/profile/Alberto_Coronado/publication/279789866_Anlisis_del_mercado_laboral_peruano_para_las_ramas_de_ingeniera_mecnica_e_ingeniera_elctrica/links/559ae25908ae99aa62ce2b0a.pdf">pdf</a>]</li>
-
-                            <li><b>Analysis of the Peruvian labor market demand in the area of mining maintenance</b>. A.R. Valle, KS Bello, <span style="text-decoration:underline">R.A. Cardenas</span>, E.R. Villota and A.M. Coronado. Proceedings of the 2nd International Seminar on mining plant and equipment maintenance (<a href="https://gecamin.com/maplemin/2015/english/">MAPLEMIN 2015</a>), Lima, Peru, July, 2015. [<a href="papers/maplemin2015.pdf">pdf</a>]</li>
                         </ul>
+
+                        
+                        
                     </div>
 
-                    <div class="col-lg-12">
-                        <a id="contact"><h2>Contact info</h2></a>
-                        <p>Email:  roncardenasacosta  [at]  gmail  [dot]  com</p>
-                        <p>Phone: (+511) 959649315</p>
-                        <p><a href="https://pe.linkedin.com/pub/ronald-cardenas-acosta/80/905/77b">LinkedIn</a></p>
-                        <p><a href="https://www.researchgate.net/profile/Ronald_Cardenas3">Research Gate</a></p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
