@@ -7,7 +7,8 @@ title: Code
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <h1>Code &amp; Datasets</h1>
-                <p>Check my repositories at <a href="https://github.com/ronaldahmed">github</a>!
+                <p>Check my repositories at <a href="https://github.com/ronaldahmed">github</a> and
+                                            <a href="https://bitbucket.org/ronald_ahmed_c_rdenas_acosta/">bitbucket</a>!
                 <div class="row">
 
                     <div class="col-lg-12">
@@ -17,14 +18,14 @@ title: Code
                                 <h3>Job Ad corpus annotated for Name Entity Recognition tasks.</h3>
                                 <p>
                                 Consisting of 800 job ads, each one tokenized and manually annotated with POS tag information (EAGLE format for Spanish data) and Entity Label in BIO format. Details in this <a href="https://www.researchgate.net/publication/284156153_Panorama_of_the_market_demand_for_mechanical_engineers_in_South_American_countries">paper</a>.<br>
-                                [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis/blob/master/annotated%20data.zip">link to repo</a>]
+                                [<a href="/docs/annotated data.zip">annotated data.zip</a>]
                                 </p>
                             </li>
 
                             <li>
                                 <h3>Entities extracted from Job Ads corpus.</h3>
                                 <p>
-                                Consisting of nearly 9000 job ads sampled from the database, tokenized and filtered from low-frequency words and tokens of no interest (phone numbers, salary, office hours, emails, urls). Then, the shallow parsers extract the relevant phrases. Dataset used in the topic model part of <a href="http://ronaldahmed.github.io/papers/shallow_parsing_topic_models.pdf">this paper</a>.<br>
+                                Consisting of nearly 9000 job ads sampled from the database, tokenized and filtered from low-frequency words and tokens of no interest (phone numbers, salary, office hours, emails, urls). Then, the shallow parsers extract the relevant phrases. Dataset used in the topic model module of <a href="http://ronaldahmed.github.io/papers/shallow_parsing_topic_models.pdf">this paper</a>.<br>
                                 [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis">link to repo</a>]
                                 </p>
                             </li>
@@ -41,9 +42,10 @@ title: Code
                     <div class="col-lg-12">
                         <h2>Code</h2>
                         <ul>
-                            <li>
+                            <p>
                                 <h3>Labor market analysis using Topic Models and Shallow Parsing</h3>
                                 [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis">code</a>]
+                                [<a href="/papers/shallow_parsing_topic_models.pdf">paper</a>]
                                 <p>
                                 Analysis of the skills expected in engineers in Peruvian industry. Topic models are used to examine the relationship between requirements and functions, previously extracted by a Shallow Parser.All data was extracted from job-hunting websites, preprocessed and manually annotated.<br>
                                 Interactive data visualizations and results explorer are available in these links:
@@ -60,25 +62,19 @@ title: Code
                             <li>
                                 <h3>Rule-based professional major extractor</h3>
                                 [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis/tree/master/major_extractor">code</a>]
+                                [<a href="https://www.researchgate.net/publication/284156153_Panorama_of_the_market_demand_for_mechanical_engineers_in_South_American_countries">paper</a>]
                                 <p>
-                                Professional majors requested in job ads are extracted using regular expressions.
+                                Professional majors requested in job ads are extracted using regular expressions and matched with defined major identifiers.
                                 </p>
                             </li>
                             <li>
-                                <h3>Simultaneus Localization and Mapping for mobile ground robots</h3>
+                                <h3>Simultaneus Localization and Mapping and Path Planning for Ackerman model mobile robots</h3>
                                 [<a href="https://github.com/ronaldahmed/SLAM-for-ugv">code</a>]
                                 <p>
-                                SLAM simulation for Ackerman mobile robots using EKF and particle filters, testing landmarks maps and occupancy grid maps of university facilities.
+                                SLAM simulation for Ackerman mobile robots using EKF and particle filters, testing landmarks maps and occupancy grid maps of university facilities.<br>
+                                For path planning, an Hybrid A* algorithm was implemented and tested for an HPI Racing Buggy (a scaled sand car), at indoor environments.
                                 </p>
                             </li>
-                            <li>
-                                <h3>Path planning for mobile ground robots</h3>
-                                [<a href="https://github.com/ronaldahmed/SLAM-for-ugv/tree/master/path-planning">code</a>]
-                                <p>
-                                Path planning for Ackerman mobile robots using A* algorithm. Tested for an HPI Racing Buggy (a scaled sand car), at indoor environments.
-                                </p>
-                            </li>
-
                         </ul>
 
                         
