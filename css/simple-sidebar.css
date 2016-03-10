@@ -6,6 +6,23 @@
 
 /* Toggle Styles */
 
+body {
+    font-size: 14px;
+}
+h3 > a {
+    color: black;
+}
+h3 > a:hover {
+    text-decoration: None;
+    color: black;
+}
+h2 > a {
+    color: black;
+}
+h2 > a:hover {
+    text-decoration: None;
+    color: black;
+}
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -26,7 +43,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #101A38;
+    background: rgb(46, 45, 48);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -42,8 +59,16 @@
     position: absolute;
     padding: 15px;
 }
+#page-content-wrapper-custom {
+    width: 100%;
+    position: absolute;
+}
 
 #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+#wrapper.toggled #page-content-wrapper-custom {
     position: absolute;
     margin-right: -250px;
 }
@@ -82,15 +107,16 @@
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
+    height: 85px;
 }
 
 .sidebar-nav > .sidebar-brand a {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
+    text-indent: 0;
 }
+
 
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
@@ -118,29 +144,61 @@
         padding: 20px;
         position: relative;
     }
+    #page-content-wrapper-custom {
+        position: relative;
+    }
 
     #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    #wrapper.toggled #page-content-wrapper-custom {
         position: relative;
         margin-right: 0;
     }
 }
 
 .circular {
-	width: 150px;
-	height: 150px;
-	border-radius: 75px;
-	-webkit-border-radius: 75px;
-	-moz-border-radius: 75px;
-	background: url('/images/profile_150.jpg') no-repeat;
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	background: url('/images/profile_120.jpg') no-repeat;
 	margin: 0 auto;
 	margin-bottom: 30px;
+    margin-top: 50px;
 	}
 
 .scrollable{
-    height: 200px;
+    height: 120px;
     overflow-y: auto;
 }
 
 .custom-list li{
-    padding: 5px 0;
+    padding: 2px 0;
+    font-size: 13px;
 }
+.aboutme-side {
+    text-align: center;
+}
+.aboutme-side > img {
+    width: 70%;
+    margin-top: 30px;
+
+}
+
+.title-hrline {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.row-pad-center {
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.row-pad {
+    padding: 30px 30px;
+}
+

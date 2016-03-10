@@ -4,82 +4,144 @@ title: Code
 ---
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
+        <div id="page-content-wrapper-custom">
             <div class="container-fluid">
-                <h1>Code &amp; Datasets</h1>
-                <p>Check my repositories at <a href="https://github.com/ronaldahmed">github</a> and
-                                            <a href="https://bitbucket.org/ronald_ahmed_c_rdenas_acosta/">bitbucket</a>!
-                <div class="row">
-
+                <div class="row row-pad" style="background-color: #eeeeee">
                     <div class="col-lg-12">
-                        <h2>Datasets</h2>
-                        <ul>
+                        <h1>Code &amp; Datasets</h1>
+                        <hr class="title-hrline">
+                        <p>Check my repositories at <a href="https://github.com/ronaldahmed">github</a> and
+                                                    <a href="https://bitbucket.org/ronald_ahmed_c_rdenas_acosta/">bitbucket</a>!
+                        </p>
+
+                        <ul class="ul-card" >
                             <li>
-                                <h3>Job Ad corpus annotated for Name Entity Recognition tasks.</h3>
-                                <p>
-                                Consisting of 800 job ads, each one tokenized and manually annotated with POS tag information (EAGLE format for Spanish data) and Entity Label in BIO format. Details in this <a href="https://www.researchgate.net/publication/284156153_Panorama_of_the_market_demand_for_mechanical_engineers_in_South_American_countries">paper</a>.<br>
-                                [<a href="/docs/annotated data.zip">annotated data.zip</a>]
-                                </p>
+                                <div class="dy">
+                                    <span class="degree">Code</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Neural mapping of natural language navigational instructions to actions using RNN LSTM</p>
+                                    <p class="where">
+                                        Based on the work by Hongyuan Mei, Mohit Bansal, and Matthew R. Walter (link <a href="http://arxiv.org/abs/1506.04089">here</a>), implemented
+                                        in the framework <a href="www.tensorflow.org">Tensorflow</a>.<br>
+                                        The implementation of the entire model made by the authors can be found in Hongyuan Mei's reposiroty <a href="https://github.com/hongyuan88/NeuralWalker">here</a> (coming soon).
+                                    </p>
+                                    [<a href="https://github.com/ronaldahmed/robot-navigation/neural-navigation-with-lstm">code</a>]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dy">
+                                    <span class="degree">Code</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Discourse influence in speakers' choice of referring expressions</p>
+                                    <p class="where">
+                                        Implementation based on the work by N. Orita, E. Vornov, N. Feldman, H. Daumé III, 2015 (link <a>here</a>). The paper proposes a
+                                        language production speaker model to incorporate updates to listeners's belief as discourse proceeds.
+                                        It incorporates discourse salience, cost of speech production and probabilities of unseen referents (obtained from an external lexicon).<br>
+                                    </p>
+                                    [<a href="https://github.com/ronaldahmed/discourse-analysis/speaker model">code</a>]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dy">
+                                    <span class="degree">Code</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Discourse analysis: topicality and salience</p>
+                                    <p class="where">
+                                        Implementation based on the work by N. Orita, E. Vornov, N. H Feldman, and J. Boyd-Graber. 2014 (link <a>here</a>).
+                                        The paper presentes an analysis of the role of referents topicality in speakers' choice of referring expressions.
+                                    </p>
+                                    [<a href="https://github.com/ronaldahmed/discourse-analysis/topicality and salience">code</a>]
+                                </div>
                             </li>
 
                             <li>
-                                <h3>Entities extracted from Job Ads corpus.</h3>
-                                <p>
-                                Consisting of nearly 9000 job ads sampled from the database, tokenized and filtered from low-frequency words and tokens of no interest (phone numbers, salary, office hours, emails, urls). Then, the shallow parsers extract the relevant phrases. Dataset used in the topic model module of <a href="http://ronaldahmed.github.io/papers/shallow_parsing_topic_models.pdf">this paper</a>.<br>
-                                [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis">link to repo</a>]
-                                </p>
+                                <div class="dy">
+                                    <span class="degree">Code</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Labor market analysis using Topic Models and Shallow Parsing</p>
+                                    <p class="where">
+                                        Code of the work presented in the <a href="papers/shallow_parsing_topic_models.pdf">paper</a> of the same name. Analysis of the skills sought in engineers in Peruvian industry. Topic models are used to examine
+                                        the relationship between requirements and functions, previously extracted by a Shallow Parser. All data was
+                                        extracted from job-hunting websites, preprocessed and manually annotated.<br>
+                                        Interactive data visualizations and results explorer are available in these links:<br>
+                                        -  Relationship between all professional majors in Peru. [<a href="http://www.empleatron.com/peru/nueva-data/circleplot">link</a>] <br>
+                                        -  Topic content browser, based on the work of <a href="http://www.cs.princeton.edu/~achaney/projects/papers/ChaneyBlei2012.pdf">Chaney and Blei</a>.. [<a href="http://www.empleatron.com/peru/browser/">link</a>]
+                                    </p>
+                                    [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis">code</a>]<br>
+
+                                </div>
                             </li>
                             <li>
-                                <h3>Complete preprocessed Job Ads corpus</h3>
-                                <p>
-                                More than 900k job ads extracted from popular Latin American job-hunting websites. The NLTK tokenizer was extended to capture technical words typical of these kind of advertisement. [available upon request]<br>
-                                </p>
+                                <div class="dy">
+                                    <span class="degree">Code</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Rule-based professional major extractor</p>
+                                    <p class="where">
+                                        Professional majors requested in job ads are extracted using regular expressions and matched
+                                        with defined major identifiers. Details in <a href="https://www.researchgate.net/publication/284156153_Panorama_of_the_market_demand_for_mechanical_engineers_in_South_American_countries">this paper</a>.
+                                    </p>
+                                    [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis/tree/master/major_extractor">code</a>]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dy">
+                                    <span class="degree">Code</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Simultaneus Localization and Mapping and Path Planning for Ackerman model mobile robots</p>
+                                    <p class="where">
+                                        SLAM simulation for Ackerman mobile robots using EKF and particle filters, testing landmarks maps and occupancy grid maps of university facilities.<br>
+                                        For path planning, an Hybrid A* algorithm was implemented and tested for an HPI Racing Buggy (a scaled sand car), at indoor environments.
+                                    </p>
+                                    [<a href="https://github.com/ronaldahmed/robot-navigation">code</a>]
+                                </div>
+                            </li>
+                            <hr class="title-hrline">
+                            <li>
+                                <div class="dy">
+                                    <span class="degree">Dataset</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Job Ad corpus annotated for Name Entity Recognition tasks</p>
+                                    <p class="where">Consisting of 800 job ads, each one tokenized and manually annotated with
+                                        POS tag information (EAGLE Spanish format) and Entity Label in BIO format. Details in this
+                                        <a href="https://www.researchgate.net/publication/284156153_Panorama_of_the_market_demand_for_mechanical_engineers_in_South_American_countries">paper</a>.</p>
+                                    [<a href="/docs/annotated data.zip">annotated_data.zip</a>]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dy">
+                                    <span class="degree">Dataset</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Entities extracted from Job Ads corpus</p>
+                                    <p class="where">Consisting of nearly 9000 job ads sampled from the database, tokenized and filtered
+                                        from low-frequency words and tokens of no interest (phone numbers, salary, office hours, emails, urls).
+                                        Then, the shallow parsers extract the relevant phrases. Dataset used in the topic model module of
+                                        <a href="http://ronaldahmed.github.io/papers/shallow_parsing_topic_models.pdf">this paper</a>.</p>
+                                    [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis">link to repo</a>]
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dy">
+                                    <span class="degree">Dataset</span>
+                                </div>
+                                <div class="description">
+                                    <p class="what">Complete preprocessed Job Ads corpus</p>
+                                    <p class="where">More than 900k job ads extracted from popular Latin American job-hunting websites.
+                                        The NLTK tokenizer was extended to capture technical words typical of these kind of advertisement.</p>
+                                    [available upon request]
+                                </div>
                             </li>
                         </ul>
+
                     </div>
 
-
-                    <div class="col-lg-12">
-                        <h2>Code</h2>
-                        <ul>
-                            <p>
-                                <h3>Labor market analysis using Topic Models and Shallow Parsing</h3>
-                                [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis">code</a>]
-                                [<a href="/papers/shallow_parsing_topic_models.pdf">paper</a>]
-                                <p>
-                                Analysis of the skills expected in engineers in Peruvian industry. Topic models are used to examine the relationship between requirements and functions, previously extracted by a Shallow Parser.All data was extracted from job-hunting websites, preprocessed and manually annotated.<br>
-                                Interactive data visualizations and results explorer are available in these links:
-                                <ul>
-                                    <li>Labor market demand treemap for all professional majors in Peru. [<a href="http://www.empleatron.com/peru/nueva-data/treemap">link</a>]</li>
-                                    <li>Labor market demand treemap for engineering majors for <a href="http://www.empleatron.com/peru/engineering/treemap">Peru</a>, <a href="http://www.empleatron.com/chile/engineering/treemap">Chile</a>, and <a href="http://www.empleatron.com/colombia/engineering/treemap">Colombia</a>.</li>
-                                    <li>Relationship between all professional majors in Peru. [<a href="http://www.empleatron.com/peru/nueva-data/circleplot">link</a>]</li>
-                                    <li>Relationship between engineering majors in <a href="http://www.empleatron.com/peru/engineering/circleplot">Peru</a>, <a href="http://www.empleatron.com/chile/engineering/circleplot">Chile</a>, and <a href="http://www.empleatron.com/colombia/engineering/circleplot">Colombia</a>.</li>
-                                    <li>Topic content browser, based on the work of <a href="http://www.cs.princeton.edu/~achaney/projects/papers/ChaneyBlei2012.pdf">Chaney and Blei</a>. [<a href="http://www.empleatron.com/peru/browser/">link</a>]</li>
-                                </ul>
-                                </p>
-                            </li>
-
-                            <li>
-                                <h3>Rule-based professional major extractor</h3>
-                                [<a href="https://github.com/ronaldahmed/labor-market-demand-analysis/tree/master/major_extractor">code</a>]
-                                [<a href="https://www.researchgate.net/publication/284156153_Panorama_of_the_market_demand_for_mechanical_engineers_in_South_American_countries">paper</a>]
-                                <p>
-                                Professional majors requested in job ads are extracted using regular expressions and matched with defined major identifiers.
-                                </p>
-                            </li>
-                            <li>
-                                <h3>Simultaneus Localization and Mapping and Path Planning for Ackerman model mobile robots</h3>
-                                [<a href="https://github.com/ronaldahmed/SLAM-for-ugv">code</a>]
-                                <p>
-                                SLAM simulation for Ackerman mobile robots using EKF and particle filters, testing landmarks maps and occupancy grid maps of university facilities.<br>
-                                For path planning, an Hybrid A* algorithm was implemented and tested for an HPI Racing Buggy (a scaled sand car), at indoor environments.
-                                </p>
-                            </li>
-                        </ul>
-
-                        
-                        
-                    </div>
 
                     
                 </div>
