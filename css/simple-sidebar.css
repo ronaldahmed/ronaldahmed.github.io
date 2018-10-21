@@ -7,7 +7,7 @@
 /* Toggle Styles */
 
 body {
-    font-size: 14px;
+    font-size: 16px;
 }
 h3 > a {
     color: black;
@@ -174,7 +174,7 @@ h2 > a:hover {
 
 .custom-list li{
     padding: 2px 0;
-    font-size: 13px;
+    font-size: 15px;
 }
 .aboutme-side {
     text-align: center;
